@@ -4,7 +4,7 @@ from .models import Women, Category
 
 @admin.register(Women)
 class WomenAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('title', 'id', 'time_create', 'time_update', 'is_publish')
 
 
 @admin.register(Category)
